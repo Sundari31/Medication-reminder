@@ -11,13 +11,11 @@ import { auth } from "./firebaseConfig";
 export const signup =  async (
   name: string,
   email: string,
-  caretakerEmail: string,
   password: string
 ) => {
   const userCredential = await createUserWithEmailAndPassword(
     auth,
     email,
-    caretakerEmail,
     password
   );
 
