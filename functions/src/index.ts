@@ -6,7 +6,7 @@ admin.initializeApp();
 
 export const dailyMedicationCheck = onSchedule(
   {
-    schedule: "0 21 * * *", // 9 PM daily
+    schedule: "every day 21:00", 
     timeZone: "Asia/Kolkata",
   },
   async () => {
